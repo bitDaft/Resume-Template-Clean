@@ -141,7 +141,7 @@ section.content > main.right {
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
-    padding-left: 27px;
+    padding-left: 45px;
 }
 section.content > main.right > section:first-child {
     flex: 0 1 auto;
