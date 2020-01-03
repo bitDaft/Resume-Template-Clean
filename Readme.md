@@ -13,4 +13,4 @@
 
 # Screenshot
 
-![example screenshot](./screenshot.jpg)
+![example screenshot](./screenshot.png)
