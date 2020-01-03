@@ -1,4 +1,4 @@
-# Resume Template Elegance
+# Resume Template Clean
 
 A clean and elegant template for resume.
  
