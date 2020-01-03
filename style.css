@@ -1,8 +1,17 @@
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Barlow', sans-serif; */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 12px;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    /*    line-height: 16px;*/
+    /*    word-spacing: 01px;*/
 }
 
 body {
@@ -41,22 +50,22 @@ ul {
     section.content > main.right {
         background-color: #af00a8;
     }
-    section.content > aside.left > section.about {
+    section.content > aside.left > section:first-child {
         background-color: #ff5df9;
     }
-    section.content > aside.left > section.contact {
+    section.content > aside.left > section:nth-child(2) {
         background-color: #00137e;
     }
-    section.content > aside.left > section.skill {
+    section.content > aside.left > section:last-child {
         background-color: #00b794;
     }
-    section.content > main.right > section.experience {
+    section.content > main.right > section:first-child {
         background-color: #33ba21;
     }
-    section.content > main.right > section.education {
+    section.content > main.right > section:nth-child(2) {
         background-color: #ef9e2f;
     }
-    section.content > main.right > section.reference {
+    section.content > main.right > section:last-child {
         background-color: #8cff04;
     }
     div.info-block > section.content-head {
@@ -73,21 +82,22 @@ ul {
     }
 }
 
+/* START LAYOUT */
 section.main {
     width: 210mm;
     height: 297mm;
-    padding: 50px 40px 20px 30px;
+    padding: 30px 40px 20px 30px;
     display: flex;
     flex-flow: column nowrap;
+    overflow: hidden;
 }
-
 section.heading {
     flex: 0 0 auto;
     text-transform: uppercase;
     letter-spacing: 32px;
     width: 100%;
     font-size: 45px;
-    font-weight: bold;
+    font-weight: 700;
 }
 section.by-line {
     flex: 0 0 auto;
@@ -98,47 +108,55 @@ section.by-line {
     border-top: 2px solid #cbcbcb;
     border-bottom: 2px solid #cbcbcb;
     margin-top: 12px;
-    margin-bottom: 22px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
 }
 section.content {
     flex: 1 1 auto;
     width: 100%;
     display: flex;
 }
-
 section.content > aside.left {
     flex: 0 0 auto;
-    width: 260px;
+    width: 230px;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: space-between;
 }
-section.content > aside.left > section.about {
+section.content > aside.left > section:first-child {
+    flex: 0 0 auto;
+    padding-bottom: 22px;
+}
+section.content > aside.left > section:nth-child(2) {
     flex: 0 0 auto;
     padding-bottom: 12px;
 }
-section.content > aside.left > section.contact {
-    flex: 1 0 auto;
-}
-section.content > aside.left > section.skill {
-    flex: 3 0 auto;
+section.content > aside.left > section:last-child {
+    flex: 0 0 auto;
 }
 section.content > main.right {
     flex: 1 1 auto;
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
-    padding-left: 22px;
+    padding-left: 27px;
 }
-section.content > main.right > section.experience {
-    flex: 5 1 auto;
+section.content > main.right > section:first-child {
+    flex: 0 1 auto;
+    padding-bottom: 9px;
 }
-section.content > main.right > section.education {
-    flex: 4 1 auto;
+section.content > main.right > section:nth-child(2) {
+    flex: 0 1 auto;
+    padding-bottom: 9px;
 }
-section.content > main.right > section.reference {
-    flex: 2 1 auto;
+section.content > main.right > section:last-child {
+    flex: 0 0 auto;
 }
+/* END LAYOUT */
+
+/* START INFO BLOCK */
 div.info-block {
     width: 100%;
     height: 100%;
@@ -146,14 +164,14 @@ div.info-block {
     flex-flow: column nowrap;
 }
 div.info-block > section.content-head {
-    flex: 0 0 50px;
+    flex: 0 0 42px;
     width: 100%;
-    border-bottom: 2px solid #cbcbcb;
-    margin-bottom: 10px;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 15px;
 }
 div.info-block > section.content-head > div.icon-ring {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     border: 1px solid black;
     margin: 1px;
@@ -162,24 +180,117 @@ div.info-block > section.content-head > div.icon-ring {
 }
 div.info-block > section.content-head > div.icon-ring > svg {
     display: block;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     margin: auto;
 }
 div.info-block > section.content-head > div.title {
-    height: 40px;
+    height: 35px;
     width: calc(100% - 45px);
     display: inline-block;
     vertical-align: middle;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
     line-height: 40px;
-    padding-left: 14px;
+    padding-left: 10px;
 }
 div.info-block > section.content-body {
     flex: 1 0 auto;
     width: 100%;
-    /*    font-size: 12px;*/
-    /*    letter-spacing: 1px;*/
+    font-size: 13px;
+}
+/* END INFO BLOCK */
+
+/* custom css for specifics */
+div.contact-list li {
+    margin-bottom: 7px;
+}
+div.contact-list li > div:first-child {
+    font-weight: 600;
+    padding-bottom: 3px;
+}
+div.contact-list li > div:first-child::after {
+    content: " :";
+}
+
+div.reference-list li {
+    margin-bottom: 10px;
+}
+div.reference-list li > div:first-child {
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+div.reference-list li > div:first-child::after {
+    content: " :";
+}
+
+div.experience-list li {
+    margin-bottom: 10px;
+}
+div.experience-list li > div.job-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+div.experience-list li > div.job-place {
+    text-transform: uppercase;
+    font-size: 11px;
+}
+div.experience-list li > div.job-duration {
+    font-size: 11px;
+}
+div.experience-list li > div.job-description {
+    margin-top: 5px;
+    font-size: 13px;
+    font-family: "Barlow", sans-serif;
+}
+
+div.education-list li {
+    margin-bottom: 10px;
+}
+div.education-list li > div.edu-title {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+div.education-list li > div.edu-place {
+    text-transform: uppercase;
+    font-size: 11px;
+}
+div.education-list li > div.edu-duration {
+    text-transform: uppercase;
+    font-size: 11px;
+}
+div.education-list li > div.edu-description {
+    margin-top: 5px;
+    font-size: 13px;
+    font-family: "Barlow", sans-serif;
+}
+
+div.skill-list ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+div.skill-list li {
+    flex: 1 0 auto;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+div.skill-list li > div:first-child {
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+div.skill-list li > div:not(:first-child) {
+    font-size: 13px;
+    padding-bottom: 3px;
+    font-family: "Barlow", sans-serif;
+}
+
+div.cnt-body {
+    font-family: "Barlow", sans-serif;
 }
