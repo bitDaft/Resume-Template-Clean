@@ -28,12 +28,14 @@ a:link {
 ul {
     list-style: none;
 }
+/*
 @media screen {
     body {
         background-color: #ffc2c2;
     }
     section.main {
         background-color: #ff5555;
+        border: 1px solid black;
     }
     section.heading {
         background-color: #d2fca1;
@@ -79,6 +81,13 @@ ul {
     }
     div.info-block > section.content-head > div.title {
         background-color: #7701ac;
+    }
+}
+*/
+
+@media screen {
+    section.main {
+        border: 1px solid black;
     }
 }
 
