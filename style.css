@@ -203,6 +203,9 @@ div.info-block > section.content-body {
 /* END INFO BLOCK */
 
 /* custom css for specifics */
+section.about section.content-body {
+    text-align: left;
+}
 div.contact-list li {
     margin-bottom: 7px;
 }
@@ -304,4 +307,7 @@ div.projects-list ul li {
     font-size: 13px;
     padding-bottom: 3px;
     font-family: "Barlow", sans-serif;
+}
+section.references {
+    margin-top: auto;
 }
