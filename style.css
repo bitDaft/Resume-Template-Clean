@@ -10,8 +10,6 @@
     font-size: 12px;
     text-align: justify;
     font-family: "Montserrat", sans-serif;
-    /*    line-height: 16px;*/
-    /*    word-spacing: 01px;*/
 }
 
 body {
@@ -132,17 +130,13 @@ section.content > aside.left {
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
-section.content > aside.left > section:first-child {
+section.content > aside.left > *:not(:last-child) {
     flex: 0 0 auto;
-    padding-bottom: 22px;
+    margin-bottom: 15px;
 }
-section.content > aside.left > section:nth-child(2) {
-    flex: 0 0 auto;
-    padding-bottom: 12px;
-}
-section.content > aside.left > section:last-child {
+section.content > aside.left > *:last-child {
     flex: 0 0 auto;
 }
 section.content > main.right {
@@ -152,13 +146,9 @@ section.content > main.right {
     flex-flow: column nowrap;
     padding-left: 45px;
 }
-section.content > main.right > section:first-child {
+section.content > main.right > section:not(:last-child) {
     flex: 0 1 auto;
-    padding-bottom: 9px;
-}
-section.content > main.right > section:nth-child(2) {
-    flex: 0 1 auto;
-    padding-bottom: 9px;
+    margin-bottom: -6px;
 }
 section.content > main.right > section:last-child {
     flex: 0 0 auto;
@@ -181,8 +171,8 @@ div.info-block > section.content-head {
 div.info-block > section.content-head > div.icon-ring {
     width: 35px;
     height: 35px;
-    border-radius: 50%;
-    border: 1px solid black;
+/*    border-radius: 50%;*/
+/*    border: 1px solid black;*/
     margin: 1px;
     display: inline-flex;
     vertical-align: middle;
@@ -301,5 +291,16 @@ div.skill-list li > div:not(:first-child) {
 }
 
 div.cnt-body {
+    font-family: "Barlow", sans-serif;
+}
+div.soft-skill-list ul,
+div.projects-list ul {
+    list-style: circle;
+    margin-left: 20px;
+}
+div.soft-skill-list ul li,
+div.projects-list ul li {
+    font-size: 13px;
+    padding-bottom: 3px;
     font-family: "Barlow", sans-serif;
 }
