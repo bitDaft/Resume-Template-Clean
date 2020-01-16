@@ -131,6 +131,7 @@ section.content > aside.left {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
+/*    justify-content: space-between;*/
 }
 section.content > aside.left > *:not(:last-child) {
     flex: 0 0 auto;
