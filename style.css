@@ -257,7 +257,7 @@ div.education-list li {
 div.education-list li > div.edu-title {
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     font-size: 14px;
 }
 div.education-list li > div.edu-place {
