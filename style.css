@@ -144,6 +144,7 @@ section.content > aside.left > *:not(:last-child) {
 }
 section.content > aside.left > *:last-child {
   flex: 0 0 auto;
+  margin-top: auto;
 }
 section.content > main.right {
   flex: 1 1 auto;
