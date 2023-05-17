@@ -26,7 +26,7 @@ a:link {
 ul {
   list-style: none;
 }
-/*
+/* 
 @media screen {
     body {
         background-color: #ffc2c2;
@@ -80,8 +80,8 @@ ul {
     div.info-block > section.content-head > div.title {
         background-color: #7701ac;
     }
-}
-*/
+} */
+
 
 @media screen {
   body {
@@ -98,7 +98,7 @@ ul {
 section.main {
   width: 210mm;
   height: 297mm;
-  padding: 30px 40px 20px 30px;
+  padding: 15px 30px 15px 30px;
   display: flex;
   flex-flow: column nowrap;
   overflow: hidden;
