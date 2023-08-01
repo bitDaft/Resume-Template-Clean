@@ -160,6 +160,8 @@ section.content > main.right > section:not(:last-child) {
 }
 section.content > main.right > section:last-child {
   flex: 0 0 auto;
+  margin-top: auto;
+  margin-bottom: 21px;
 }
 /* END LAYOUT */
 
@@ -208,6 +210,10 @@ div.info-block > section.content-body {
   font-size: 13px;
 }
 /* END INFO BLOCK */
+
+section.contact {
+   margin-top: 26px;
+}
 
 /* custom css for specifics */
 section.about section.content-body {
